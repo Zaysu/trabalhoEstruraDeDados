@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <title>Arovore B*</title>
+</head>
+<body>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Árvore B+</h1>
+          <p class="lead"> <a href=""> </a>Fonte: https://pt.wikipedia.org/wiki/%C3%81rvore_B%2B</p>
+          <h3 class="display-5">
+            Na ciência da computação uma árvore B+ é uma estrutura de dados do tipo árvore derivada das árvores B, mas com uma forma diferente de armazenamento de suas chaves. Tal organização confere propriedades, algoritmos de inserção, busca e remoção de chaves diferentes dos utilizados em árvores B, mas com uma gama de aplicações muito semelhantes em banco de dados e sistemas de arquivos.
+
+          Estruturas de dados como essa são muito empregadas em banco de dados e sistemas de arquivos como o NTFS para o Microsoft Windows, o sistema de ficheiros ReiserFS para Unix, o XFS para IRIX e Linux, e o JFS2 para AIX, OS/2 e Linux, usam este tipo de árvore.
+
+          Assim como as árvores B, as árvores B+ visam reduzir as operações de leitura e escrita em memória secundária, uma vez que, essas operações são demoradas para um sistema computacional e devem ser minimizadas sempre que possível.  
+            
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Bplustree.png/500px-Bplustree.png" class="img-fluid" alt="Responsive image">
+          <h4 class="display-4"> 
+            <p><span class="badge text-bg-dark"> Visão Geral </span>
+             <p>A árvore B+ aparentemente foi proposta por Knuth e grande parte da literatura sobre essa estrutura é encontrada em forma de artigos ao invés de livros.[1] Com ela foi possível organizar um arquivo de maneira que o processamento sequencial (característica até então pouco eficiente para árvores B) e aleatório de chaves fossem eficientes</p> 
+
+             <p> A idéia inicial desta variação da árvore B é manter todas as chaves de busca em seus nós folha de maneira que o acesso sequencial ordenado das chaves de busca seja um processo mais eficiente do que em árvores B. Obviamente tal acesso sequencial também é possivel nestas, mas, para isso seria necessário algum algoritmo semelhante ao percurso em ordem realizado numa árvore binária.</p> 
+              
+             <p> Para manter o acesso sequencial, cada nó folha contém apontadores para quais nós são seus predecessores ou sucessores na sequência de chaves e como nas árvores B, as chaves estão ordenadas tanto em suas páginas internas quanto em páginas folha. Dessa forma, quando realizamos uma busca por uma chave k e para encontrarmos a chave k+1, ou seja sua sucessora na ordem, basta verificar a chave ao lado de k caso k+1 esteja na mesma página de k ou carregar a próxima página contida na lista de páginas para verificar qual chave sucede k. Tal procedimento em árvores B seria mais custoso, pois, deveríamos buscar por k+1 iniciando pela raiz da árvore caso k+1 não estivesse na mesma página de k. Em comparação com as árvores B, este tipo de acesso sequencial às chaves é um dos principais benefícios proporcionados pelas árvores B+.</p> 
+              
+             <p>Além desta característica, também devemos analisar suas semelhanças com as árvores B. A organização das páginas internas ou no inglês index set é semelhante a de uma árvore B, este, por sua vez, armazena cópias de chaves para referênciar as buscas, mas não contém as chaves em si. Já no sequence set estão as páginas folha que contém as chaves inseridas na árvore e funciona como uma lista encadeada permitindo o acesso sequencial ordenado às chaves independente do index set.</p> 
+        </div>  
+      </div>
+    
+</body>
+</html>
